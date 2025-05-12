@@ -1,0 +1,137 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+notebook_checkpoints/ # For non .ipynb extension notebooks
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PEP 582; __pypackages__
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath files
+*.sage.py
+
+# Environments
+.env # IMPORTANT: Never commit .env files
+.venv
+env/
+venv/ # Standard venv directory name
+ENV/
+env.bak/
+venv.bak/
+# Conda environments are usually stored elsewhere, but if one gets created locally:
+.condarc
+conda-meta/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# PyDev project settings
+.pydevproject
+
+# PyCharm
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Sensitive files specific to this project (if any, besides .env)
+# e.g., credentials.json if you were using service account keys directly
+
+# Data files (if large or specific to an environment)
+# Consider if you want to commit example PDFs but not a huge corpus
+# data/raw_documents/*.pdf
+data/processed_data/
+vector_store_data/ # For ChromaDB or other local vector stores
+chroma_db_cna/     # Specific Chroma DB path from our config
+*.pkl              # Pickle files for intermediate data can be large
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
