@@ -1,0 +1,2 @@
+This is a simple test document for the loader.
+It has two paragraphs.

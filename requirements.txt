@@ -1,0 +1,40 @@
+# requirements.txt
+
+# --- Core & Development ---
+python-dotenv # For loading .env files
+ipykernel     # For Jupyter notebook support within this Conda env
+notebook      # For running Jupyter notebooks if you choose to use them for exploration
+ruff          # Linter and formatter, helps maintain code quality
+pytest        # For running automated tests
+
+# --- Langchain & Google AI ---
+langchain>=0.1.0,<0.2.0 # Core Langchain framework, pin to avoid breaking changes initially
+langchain-core
+langchain-community
+langchain-google-genai # For Gemini API via Google's Generative Language API
+
+# --- Document Processing ---
+# "unstructured" is powerful for parsing various document types (PDF, DOCX, etc.)
+# [local-inference] includes models for layout detection locally.
+# Add [ocr] if Tesseract-based OCR is needed: "unstructured[local-inference,ocr]"
+unstructured[local-inference]
+pypdf2 # Can still be useful for some very specific PDF tasks, though unstructured is primary
+
+# --- Embedding Models (alternative or for specific tasks) ---
+# sentence-transformers # If you plan to use open-source embedding models from Hugging Face
+
+# --- Vector Stores ---
+chromadb>=0.4.22,<0.5.0 # For local vector storage, pin Chroma version
+
+# --- LLM Tokenizer ---
+tiktoken # Useful for accurate text splitting by tokens, often used as a reference
+
+# --- API & UI (for later phases) ---
+fastapi             # For building a backend API
+uvicorn[standard]   # ASGI server for FastAPI
+streamlit           # For building a simple user interface
+
+# --- Utilities ---
+numpy
+pandas
+tenacity            # For robust retries (e.g., with API calls)
